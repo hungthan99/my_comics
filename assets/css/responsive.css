@@ -1,0 +1,88 @@
+/* Mobile & tablet */
+@media (max-width: 63.9375em) {
+  .hide__on__mobile__tablet {
+    display: none;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .header__heading {
+    justify-content: space-between;
+  }
+
+  .header__search__input:focus {
+    border-color: #eee;
+  }
+
+  .header__menu {
+    display: block;
+    right: 24px;
+  }
+
+  .banner {
+    margin-top: 64px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .hide__on__tablet {
+    display: none;
+  }
+
+  .container__item__heading__overlay__center {
+    width: calc(100% + 9px);
+  }
+
+  .container__item__heading__category {
+    font-size: 1.2rem;
+  }
+
+  .container__item__heading__title {
+    font-size: 1.4rem;
+  }
+
+  .comics__name {
+    overflow: hidden;
+  }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+  .hide__on__mobile {
+    display: none;
+  }
+
+  .header {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .banner__img {
+    width: 100%;
+  }
+
+  .container {
+    background-color: var(--white-color);
+  }
+
+  .container__item__heading__img,
+  .container__item__heading__img__center {
+    height: 120px;
+  }
+
+  .container__item__heading__overlay {
+    top: 80px;
+  }
+
+  .container__item__heading__overlay__center {
+    top: 156px;
+    height: 100%;
+    margin-left: 2px;
+  }
+}

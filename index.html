@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My comics</title>
+    <link
+      rel="icon"
+      href="https://truyenvnhay.com/wp-content/uploads/2019/10/cropped-cropped-truyenvn-logo-1-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <div class="header">
+        <div class="grid wide">
+          <!-- Heading title and search -->
+          <div class="header__heading">
+            <a href="/" class="header__title">
+              <img
+                class="header__title__img"
+                src="./assets/img/comics-logo.webp"
+                alt="Logo comics"
+              />
+            </a>
+
+            <div class="header__search hide__on__mobile">
+              <input
+                type="text"
+                class="header__search__input"
+                placeholder="Tìm kiếm truyện tranh..."
+              />
+
+              <!-- Search result -->
+              <div class="header__search__result">
+                <p class="header__search__result__heading">
+                  Không tìm thấy truyện
+                </p>
+
+                <ul class="header__search__result__list">
+                  <li class="header__search__result__item">
+                    <a href="#" class="header__search__result__item__link">
+                      <div
+                        class="header__search__result__item__link__img"
+                        style="
+                          background-image: url(https://truyenvnhay.com/wp-content/uploads/2019/10/36-ke-theo-duoi-vo-yeu_1524188513.jpg);
+                        "
+                      ></div>
+                      <span class="header__search__result__item__link__name"
+                        >36 Kế Theo Đuổi Vợ Yêu</span
+                      >
+                    </a>
+                  </li>
+
+                  <li class="header__search__result__item">
+                    <a href="#" class="header__search__result__item__link">
+                      <div
+                        class="header__search__result__item__link__img"
+                        style="
+                          background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/07/truyen-7-ngay-song-voi-chi-gai.jpg);
+                        "
+                      ></div>
+                      <span class="header__search__result__item__link__name"
+                        >7 Ngày Sống Với Chị Gái</span
+                      >
+                    </a>
+                  </li>
+
+                  <li class="header__search__result__item">
+                    <a href="#" class="header__search__result__item__link">
+                      <div
+                        class="header__search__result__item__link__img"
+                        style="
+                          background-image: url(https://truyenvnhay.com/wp-content/uploads/2019/10/ac-ma-chuyen-sung-co-vo-ngot-ngao-cua-tong-tai_1564313348.jpg);
+                        "
+                      ></div>
+                      <span class="header__search__result__item__link__name"
+                        >Ác Ma Chuyên Sủng: Cô Vợ Ngọt Ngào Của Tổng Tài</span
+                      >
+                    </a>
+                  </li>
+
+                  <li class="header__search__result__item">
+                    <a href="#" class="header__search__result__item__link">
+                      <div
+                        class="header__search__result__item__link__img"
+                        style="
+                          background-image: url(https://truyenvnhay.com/wp-content/uploads/2022/08/ai-toan-nang-thay-ky-chu-bao-thu.jpg);
+                        "
+                      ></div>
+                      <span class="header__search__result__item__link__name"
+                        >AI Toàn Năng Thay Ký Chủ Báo Thù</span
+                      >
+                    </a>
+                  </li>
+
+                  <li class="header__search__result__item">
+                    <a href="#" class="header__search__result__item__link">
+                      <div
+                        class="header__search__result__item__link__img"
+                        style="
+                          background-image: url(https://truyenvnhay.com/wp-content/uploads/2022/10/an-toan-nhu-o-nha.jpg);
+                        "
+                      ></div>
+                      <span class="header__search__result__item__link__name"
+                        >An Toàn Như Ở Nhà</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <i class="header__search__icon fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <label for="navigation__mobile__input" class="header__menu">
+              <i class="header__menu__icon fa-solid fa-bars"></i>
+            </label>
+
+            <input
+              type="checkbox"
+              hidden
+              class="navigation__input"
+              id="navigation__mobile__input"
+            />
+
+            <label
+              for="navigation__mobile__input"
+              class="navigation__overlay"
+            ></label>
+
+            <!-- Navigation mobile -->
+            <div class="navigation__mobile">
+              <a href="/" class="navigation__mobile__logo">
+                <img
+                  class="navigation__mobile__logo__img"
+                  src="./assets/img/comics-logo.webp"
+                  alt="Logo comics"
+                />
+              </a>
+
+              <ul class="navigation__mobile__list">
+                <li class="navigation__mobile__item hide__on__tablet">
+                  <!-- Header search mobile -->
+                  <div class="header__search__mobile">
+                    <input
+                      type="text"
+                      class="header__search__input__mobile"
+                      placeholder="Tìm kiếm truyện tranh..."
+                    />
+
+                    <!-- Search result -->
+                    <div class="header__search__result__mobile">
+                      <p class="header__search__result__heading__mobile">
+                        Không tìm thấy truyện
+                      </p>
+
+                      <ul class="header__search__result__list__mobile">
+                        <li class="header__search__result__item__mobile">
+                          <a
+                            href="#"
+                            class="header__search__result__item__link__mobile"
+                          >
+                            <div
+                              class="header__search__result__item__link__img__mobile"
+                              style="
+                                background-image: url(https://truyenvnhay.com/wp-content/uploads/2019/10/36-ke-theo-duoi-vo-yeu_1524188513.jpg);
+                              "
+                            ></div>
+                            <span
+                              class="header__search__result__item__link__name__mobile"
+                              >36 Kế Theo Đuổi Vợ Yêu</span
+                            >
+                          </a>
+                        </li>
+
+                        <li class="header__search__result__item__mobile">
+                          <a
+                            href="#"
+                            class="header__search__result__item__link__mobile"
+                          >
+                            <div
+                              class="header__search__result__item__link__img__mobile"
+                              style="
+                                background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/07/truyen-7-ngay-song-voi-chi-gai.jpg);
+                              "
+                            ></div>
+                            <span
+                              class="header__search__result__item__link__name__mobile"
+                              >7 Ngày Sống Với Chị Gái</span
+                            >
+                          </a>
+                        </li>
+
+                        <li class="header__search__result__item__mobile">
+                          <a
+                            href="#"
+                            class="header__search__result__item__link__mobile"
+                          >
+                            <div
+                              class="header__search__result__item__link__img__mobile"
+                              style="
+                                background-image: url(https://truyenvnhay.com/wp-content/uploads/2019/10/ac-ma-chuyen-sung-co-vo-ngot-ngao-cua-tong-tai_1564313348.jpg);
+                              "
+                            ></div>
+                            <span
+                              class="header__search__result__item__link__name__mobile"
+                              >Ác Ma Chuyên Sủng: Cô Vợ Ngọt Ngào Của Tổng
+                              Tài</span
+                            >
+                          </a>
+                        </li>
+
+                        <li class="header__search__result__item__mobile">
+                          <a
+                            href="#"
+                            class="header__search__result__item__link__mobile"
+                          >
+                            <div
+                              class="header__search__result__item__link__img__mobile"
+                              style="
+                                background-image: url(https://truyenvnhay.com/wp-content/uploads/2022/08/ai-toan-nang-thay-ky-chu-bao-thu.jpg);
+                              "
+                            ></div>
+                            <span
+                              class="header__search__result__item__link__name__mobile"
+                              >AI Toàn Năng Thay Ký Chủ Báo Thù</span
+                            >
+                          </a>
+                        </li>
+
+                        <li class="header__search__result__item__mobile">
+                          <a
+                            href="#"
+                            class="header__search__result__item__link__mobile"
+                          >
+                            <div
+                              class="header__search__result__item__link__img__mobile"
+                              style="
+                                background-image: url(https://truyenvnhay.com/wp-content/uploads/2022/10/an-toan-nhu-o-nha.jpg);
+                              "
+                            ></div>
+                            <span
+                              class="header__search__result__item__link__name__mobile"
+                              >An Toàn Như Ở Nhà</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <i
+                      class="header__search__icon__mobile fa-solid fa-magnifying-glass"
+                    ></i>
+                  </div>
+                </li>
+
+                <li class="navigation__mobile__item">
+                  <a href="#" class="navigation__mobile__item__link">
+                    Truyện Tranh
+                  </a>
+                </li>
+                <li
+                  class="navigation__mobile__item navigation__mobile__item__category"
+                >
+                  <a href="" class="navigation__mobile__item__link">
+                    Thể loại
+                  </a>
+                </li>
+
+                <li
+                  class="navigation__mobile__item navigation__mobile__item__hot"
+                >
+                  <a href="" class="navigation__mobile__item__link"> HOT </a>
+                </li>
+                <li class="navigation__mobile__item">
+                  <a href="#" class="navigation__mobile__item__link">
+                    Truyện Mới Cập Nhật
+                  </a>
+                </li>
+                <li class="navigation__mobile__item">
+                  <a href="#" class="navigation__mobile__item__link">
+                    Truyện Tranh 18+
+                  </a>
+                </li>
+                <li class="navigation__mobile__item">
+                  <a href="#" class="navigation__mobile__item__link">
+                    Manhwa
+                  </a>
+                </li>
+                <li class="navigation__mobile__item">
+                  <a href="#" class="navigation__mobile__item__link">
+                    Manhua
+                  </a>
+                </li>
+                <li class="navigation__mobile__item">
+                  <a href="#" class="navigation__mobile__item__link">
+                    Lịch Sử
+                  </a>
+                </li>
+                <li class="navigation__mobile__item">
+                  <a href="#" class="navigation__mobile__item__link">
+                    Đam Mỹ
+                  </a>
+                </li>
+                <li class="navigation__mobile__item">
+                  <a href="#" class="navigation__mobile__item__link">
+                    Theo Dõi
+                  </a>
+                </li>
+                <li class="navigation__mobile__item">
+                  <a href="#" class="navigation__mobile__item__link">
+                    Tin Tức
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="grid hide__on__mobile__tablet">
+          <div class="navigation">
+            <div class="grid wide">
+              <div class="row">
+                <div class="col l-12">
+                  <ul class="navigation__list">
+                    <li class="navigation__item">
+                      <a href="#" class="navigation__item__link">
+                        Truyện Tranh
+                      </a>
+                    </li>
+                    <!--Category -->
+                    <li
+                      class="navigation__item navigation__item__category pr-36"
+                    >
+                      <a href="" class="navigation__item__link">
+                        Thể loại
+                        <i
+                          class="navigation__item__icon fa-solid fa-angle-down"
+                        ></i>
+                      </a>
+                      <div class="list__categories">
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">16+</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">18+</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">ABO</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Action</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Adult</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Adventure</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Anime</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Big Boobs</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >BlowJobs</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Boy Love</a
+                            >
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">BoyLove</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Chuyển Sinh</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Cổ Đại</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Comedy</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Comic</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Comdom</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Cooking</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Cunnilingus</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >DC Comic</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Demons</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Detective</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Doujinshi</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Drama</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Đam Mỹ</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Đô Thị</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Ecchi</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Echi</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Exhibitionism</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Fantasy</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Gender Bender</a
+                            >
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Giang Hồ</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Gintama DJ</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Hài Hước</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Hành Động</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Harem</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Hiện đại</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Historical</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Horror</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Huyền Huyễn</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Isekai</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Josei</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Không Che</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Kịch Tính</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Lãng Mạn</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Live Action</a
+                            >
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Mafia</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Magic</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Manga</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Manhua</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Manhwa</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Manhwa 18+</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Martial Arts</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Marvel Comics</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Masturbation</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Mature</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Mecha</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Military</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Mystery</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Ngôn Tình</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >One Shot</a
+                            >
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">OneShot</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Psychological</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Romance</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >School Life</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >School Uniform</a
+                            >
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >SchoolGirl</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Sci-Fi</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Seinen</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Shoujo</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Shoujo Ai</a
+                            >
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Shounen</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Shounen Ai</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Showbiz</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Slice Of Life</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Smut</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Soft Yaoi</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Soft Yuri</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Sports</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Supernational</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Tạp chí truyện tranh</a
+                            >
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Thiếu Nhi</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Tình cảm</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Tragedy</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Trinh Thám</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Trọng Sinh</a
+                            >
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Truyện Chữ</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Truyện Ma</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Truyện Màu</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Truyện Scan</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Truyện Tranh 18+</a
+                            >
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >TruyenVN</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Vanilla</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Việt Nam</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Vườn Trường</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Webtoon</a>
+                          </li>
+                        </ul>
+
+                        <ul class="category__row">
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >Xuyên Không</a
+                            >
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Yaoi</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">Yuri</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link">HentaiZ</a>
+                          </li>
+
+                          <li class="category__item">
+                            <a href="#" class="category__item__link"
+                              >HentaiVN</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- HOT -->
+                    <li class="navigation__item navigation__item__hot pr-36">
+                      <a href="" class="navigation__item__link">
+                        HOT
+                        <i
+                          class="navigation__item__icon fa-solid fa-angle-down"
+                        ></i>
+                      </a>
+                      <div class="list__hots">
+                        <ul class="hot__row">
+                          <li class="hot__item">
+                            <a href="#" class="hot__item__link">Top Ngày</a>
+                          </li>
+                          <li class="hot__item">
+                            <a href="#" class="hot__item__link">Top Tuần</a>
+                          </li>
+                          <li class="hot__item">
+                            <a href="#" class="hot__item__link">Top Tháng</a>
+                          </li>
+                          <li class="hot__item">
+                            <a href="#" class="hot__item__link">Top Năm</a>
+                          </li>
+                          <li class="hot__item">
+                            <a href="#" class="hot__item__link">Truyện Full</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#" class="navigation__item__link">
+                        Truyện Mới Cập Nhật
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#" class="navigation__item__link">
+                        Truyện Tranh 18+
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#" class="navigation__item__link"> Manhwa </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#" class="navigation__item__link"> Manhua </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#" class="navigation__item__link"> Lịch Sử </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#" class="navigation__item__link"> Đam Mỹ </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#" class="navigation__item__link"> Theo Dõi </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#" class="navigation__item__link"> Tin Tức </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid wide">
+          <!-- Banner -->
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="banner">
+                <a href="#" class="banner__link">
+                  <img class="banner__img" src="./assets/img/banner-1.gif" alt="Banner" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Container heading -->
+          <div class="row">
+            <div class="col l-3 m-4 c-0">
+              <a href="#" class="container__item__heading">
+                <div
+                  class="container__item__heading__img"
+                  style="
+                    background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/truyen-dong-ho-ngung-dong-thoi-gian.jpg);
+                  "
+                ></div>
+                <span class="container__item__heading__chapter">Chương 70</span>
+                <div class="container__item__heading__overlay">
+                  <h4 class="container__item__heading__title">
+                    Đồng Hồ Ngưng Đọng Thời Gian
+                  </h4>
+                </div>
+              </a>
+              <a href="#" class="container__item__heading">
+                <div
+                  class="container__item__heading__img"
+                  style="
+                    background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/truyen-thuc-tap-sinh-lang-tien-ca.jpg);
+                  "
+                ></div>
+                <span class="container__item__heading__chapter">Chương 56</span>
+                <div class="container__item__heading__overlay">
+                  <h4 class="container__item__heading__title">
+                    Thực Tập Ở Làng Tiên Cá
+                  </h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l-6 m-8 c-0">
+              <a href="#" class="container__item__heading">
+                <div
+                  class="container__item__heading__img container__item__heading__img__center"
+                  style="
+                    background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/1.jpg);
+                  "
+                ></div>
+                <span class="container__item__heading__chapter bc__aqua"
+                  >Chương 10</span
+                >
+                <div
+                  class="container__item__heading__overlay container__item__heading__overlay__center"
+                >
+                  <p class="container__item__heading__category">
+                    Thể loại: Truyện Tranh 18+, Truyện Màu, Manhwa 18+, Webtoon,
+                    Harem, Fantasy
+                  </p>
+                  <h4
+                    class="container__item__heading__title container__item__heading__title__center"
+                  >
+                    Bug Game Số Hưởng
+                  </h4>
+                </div>
+
+                <p class="container__item__heading__description">
+                  Truyện Bug Game Số Hưởng kể về một thanh niên trong quá trình
+                  làm game đã mắc phải một bug khiến cho cuộc đời anh rẽ sang
+                  trang mới với sự vây quanh của vô vàn người đẹp. Truyện thuộc
+                  thể loại Manhwa, Webtoon, Truyện Màu, là một Truyện Tranh 18+
+                  được nhiều độc giả yêu thích và đón đọc tại TruyenVN.
+                </p>
+              </a>
+            </div>
+
+            <div class="col l-3 m-0 c-0">
+              <!-- Comic item heading -->
+              <a href="#" class="container__item__heading">
+                <div
+                  class="container__item__heading__img"
+                  style="
+                    background-image: url(https://truyenvnhay.com/wp-content/uploads/2020/05/truyen-dao-hai-tac-1-e1589533818711.jpg);
+                  "
+                ></div>
+                <span class="container__item__heading__chapter bc__purple"
+                  >Chương 1095: Raw</span
+                >
+                <div class="container__item__heading__overlay">
+                  <h4 class="container__item__heading__title">Đảo Hải Tặc</h4>
+                </div>
+              </a>
+              <a href="#" class="container__item__heading">
+                <div
+                  class="container__item__heading__img"
+                  style="
+                    background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/truyen-theo-hoc-dam-su.jpg);
+                  "
+                ></div>
+                <span class="container__item__heading__chapter bc__green"
+                  >Chương 35</span
+                >
+                <div class="container__item__heading__overlay">
+                  <h4 class="container__item__heading__title">
+                    Theo Học Dâm Sư
+                  </h4>
+                </div>
+              </a>
+            </div>
+
+            <a href="#" class="container__item__heading col l-0 m-0 c-12">
+              <div
+                class="container__item__heading__img"
+                style="
+                  background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/truyen-dong-ho-ngung-dong-thoi-gian.jpg);
+                "
+              ></div>
+              <span class="container__item__heading__chapter">Chương 70</span>
+              <div class="container__item__heading__overlay">
+                <h4 class="container__item__heading__title">
+                  Đồng Hồ Ngưng Đọng Thời Gian
+                </h4>
+              </div>
+            </a>
+
+            <a href="#" class="container__item__heading col l-0 m-0 c-12">
+              <div
+                class="container__item__heading__img"
+                style="
+                  background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/truyen-thuc-tap-sinh-lang-tien-ca.jpg);
+                "
+              ></div>
+              <span class="container__item__heading__chapter">Chương 56</span>
+              <div class="container__item__heading__overlay">
+                <h4 class="container__item__heading__title">
+                  Thực Tập Ở Làng Tiên Cá
+                </h4>
+              </div>
+            </a>
+
+            <a href="#" class="container__item__heading col l-0 m-0 c-12">
+              <div
+                class="container__item__heading__img container__item__heading__img__center"
+                style="
+                  background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/1.jpg);
+                "
+              ></div>
+              <span class="container__item__heading__chapter bc__aqua"
+                >Chương 10</span
+              >
+              <div
+                class="container__item__heading__overlay container__item__heading__overlay__center"
+              >
+                <p class="container__item__heading__category">
+                  Thể loại: Truyện Tranh 18+, Truyện Màu, Manhwa 18+, Webtoon,
+                  Harem, Fantasy
+                </p>
+                <h4
+                  class="container__item__heading__title container__item__heading__title__center"
+                >
+                  Bug Game Số Hưởng
+                </h4>
+              </div>
+
+              <p class="container__item__heading__description">
+                Truyện Bug Game Số Hưởng kể về một thanh niên trong quá trình
+                làm game đã mắc phải một bug khiến cho cuộc đời anh rẽ sang
+                trang mới với sự vây quanh của vô vàn người đẹp. Truyện thuộc
+                thể loại Manhwa, Webtoon, Truyện Màu, là một Truyện Tranh 18+
+                được nhiều độc giả yêu thích và đón đọc tại TruyenVN.
+              </p>
+            </a>
+
+            <a href="#" class="container__item__heading col l-0 m-0 c-12">
+              <div
+                class="container__item__heading__img"
+                style="
+                  background-image: url(https://truyenvnhay.com/wp-content/uploads/2020/05/truyen-dao-hai-tac-1-e1589533818711.jpg);
+                "
+              ></div>
+              <span class="container__item__heading__chapter bc__purple"
+                >Chương 1095: Raw</span
+              >
+              <div class="container__item__heading__overlay">
+                <h4 class="container__item__heading__title">Đảo Hải Tặc</h4>
+              </div>
+            </a>
+
+            <a href="#" class="container__item__heading col l-0 m-0 c-12">
+              <div
+                class="container__item__heading__img"
+                style="
+                  background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/truyen-theo-hoc-dam-su.jpg);
+                "
+              ></div>
+              <span class="container__item__heading__chapter bc__green"
+                >Chương 35</span
+              >
+              <div class="container__item__heading__overlay">
+                <h4 class="container__item__heading__title">
+                  Theo Học Dâm Sư
+                </h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Container body -->
+          <div class="row">
+            <div class="col l-12 m-12">
+              <div class="comics__category">
+                <a href="#" class="comics__category__link"
+                  ><h2 class="comics__category__title">Truyện Đề Cử</h2></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Comics nomination list nomination -->
+          <ul class="comics__list">
+            <div class="row">
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2019/10/dao-hai-tac_1552224567.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">6 ngày trước</span>
+                      <span class="comics__hot bc__aqua">Hot</span>
+                    </div>
+                    <h4 class="comics__name">Đảo Hải Tặc</h4>
+                    <p class="comics__chapter">Chương 1095</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2020/04/nhat-dang-gia-dinh_1574248612.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">14 giờ trước</span>
+                      <span class="comics__hot bc__aqua">Hot</span>
+                    </div>
+                    <h4 class="comics__name">Nhất Đẳng Gia Đinh</h4>
+                    <p class="comics__chapter">Chương 308</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2020/05/toan-cau-cao-vo_1589080520.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 ngày trước</span>
+                      <span class="comics__hot bc__aqua">Hot</span>
+                    </div>
+                    <h4 class="comics__name">Toàn Cầu Cao Võ</h4>
+                    <p class="comics__chapter">Chương 227</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2021/11/truyen-tan-the-gioi-moi-wonderful-new-world-001.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 ngày trước</span>
+                      <span class="comics__hot bc__aqua">Hot</span>
+                    </div>
+                    <h4 class="comics__name">
+                      A Wonderful New World - Tân Thế Giới Mới
+                    </h4>
+                    <p class="comics__chapter">Chương 210</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2020/05/truyen-van-co-than-de-e1589942562610.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 ngày trước</span>
+                      <span class="comics__hot bc__aqua">Hot</span>
+                    </div>
+                    <h4 class="comics__name">Vạn Cổ Thần Đế</h4>
+                    <p class="comics__chapter">Chương 88</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2021/10/truyen-lop-hoc-bi-mat-secret-class-1.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">3 ngày trước</span>
+                      <span class="comics__hot bc__aqua">Hot</span>
+                    </div>
+                    <h4 class="comics__name">
+                      Lớp Học Bí Mật - Secret Class (Hot)
+                    </h4>
+                    <p class="comics__chapter">Chương 192</p>
+                  </a>
+                </li>
+              </div>
+            </div>
+          </ul>
+
+          <div class="row">
+            <div class="col l-12 m-12">
+              <div class="comics__category mt__60">
+                <a href="#" class="comics__category__link"
+                  ><h2 class="comics__category__title">
+                    Truyện Mới Cập Nhật
+                  </h2></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Comics nomination list update -->
+          <ul class="comics__list">
+            <div class="row">
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2022/05/vo-tan-thon-phe.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">8 giây trước</span>
+                    </div>
+                    <h4 class="comics__name">Vô Tận Thôn Phệ</h4>
+                    <p class="comics__chapter">Chương 104</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/truyen-thach-thuc.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">44 giây trước</span>
+                    </div>
+                    <h4 class="comics__name">Thách Thức</h4>
+                    <p class="comics__chapter">Chương 15</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2021/03/tu-la-vo-than.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">1 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Tu La Võ Thần</h4>
+                    <p class="comics__chapter">Chương 743</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/themes/TruyenVN/images/load-03.gif);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">1 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">
+                      Ichinichi Ichi Jikan Dake Neko Ni Naru Imouto
+                    </h4>
+                    <p class="comics__chapter">Chương 4</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/10/truyen-thai-giam-thi-co-the-co-y-do-xau-gi-chu.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">1 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">
+                      Thái Giám Thì Có Thể Có Ý Đồ Xấu Gì Chứ?
+                    </h4>
+                    <p class="comics__chapter">Chương 7</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/themes/TruyenVN/images/load-03.gif);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">1 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Himekishi-sama no Himo</h4>
+                    <p class="comics__chapter">Chương 2</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2022/03/truyen-dung-hoc-nua-cham-vao-em-di-ma.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                      <span class="comics__hot bc__aqua">Hot</span>
+                    </div>
+                    <h4 class="comics__name">
+                      Đừng Học Nữa, Chạm Vào Em Đi Mà!
+                    </h4>
+                    <p class="comics__chapter">Chương 81</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/02/minh-ta-thon-phe-thien-dia.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Mình ta thôn phệ thiên địa</h4>
+                    <p class="comics__chapter">Chương 17</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/09/truyen-dead-account.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Dead Account</h4>
+                    <p class="comics__chapter">Chương 20</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2021/12/ta-khong-muon-lam-de-nhat.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Ta Không Muốn Làm Đệ Nhất</h4>
+                    <p class="comics__chapter">Chương 201</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/05/ho-van-chua-muon-xoi-rong.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Hổ Vẫn Chưa Muốn Xơi Rồng</h4>
+                    <p class="comics__chapter">Chương 22</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/08/truyen-bleach-full-color.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Bleach (Full Color)</h4>
+                    <p class="comics__chapter">Chương 22</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/themes/TruyenVN/images/load-03.gif);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Nononono</h4>
+                    <p class="comics__chapter">Chương 4</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/themes/TruyenVN/images/load-03.gif);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Chiếc Lồng Chứa Quỷ</h4>
+                    <p class="comics__chapter">Chương 1</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/themes/TruyenVN/images/load-03.gif);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">
+                      Kết Hôn Với Người Quyền Lực Nhất Hành Tinh
+                    </h4>
+                    <p class="comics__chapter">Chương 4</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/10/truyen-con-gi-te-hon-ca-yandere-nua.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">
+                      Còn Gì Tệ Hơn Cả Yandere Nữa...?
+                    </h4>
+                    <p class="comics__chapter">Chương 11</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2022/03/chan-vo-the-gioi.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Chân Võ Thế Giới</h4>
+                    <p class="comics__chapter">Chương 82</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2022/03/dai-su-huynh-khong-co-gi-noi-bat.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">
+                      Đại Sư Huynh Không Có Gì Nổi Bật
+                    </h4>
+                    <p class="comics__chapter">Chương 85</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2020/04/ta-chang-qua-la-mot-dai-la-kim-tien_1585898743.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">
+                      Ta Chẳng Qua Là Một Đại La Kim Tiên
+                    </h4>
+                    <p class="comics__chapter">Chương 1112</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/06/truyen-osaka.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">2 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Osaka</h4>
+                    <p class="comics__chapter">Chương 28</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/04/truyen-the-gioi-mo.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">3 giờ trước</span>
+                      <span class="comics__hot bc__aqua">Hot</span>
+                    </div>
+                    <h4 class="comics__name">Thế Giới Mở</h4>
+                    <p class="comics__chapter">Chương 54</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2022/02/truyen-nhung-nguoi-ban-cua-chi-toi.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">3 giờ trước</span>
+                      <span class="comics__hot bc__aqua">Hot</span>
+                    </div>
+                    <h4 class="comics__name">Những Người Bạn Của Chị Tôi</h4>
+                    <p class="comics__chapter">Chương 77 - END</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2020/06/fairy-tail-100-year-quest.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">3 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Hội Pháp Sư nhiệm vụ trăm năm</h4>
+                    <p class="comics__chapter">Chương 143</p>
+                  </a>
+                </li>
+              </div>
+              <div class="col l-2 m-3 c-6">
+                <li class="comics__item">
+                  <a href="#" class="comics__item__link">
+                    <div
+                      class="comics__img"
+                      style="
+                        background-image: url(https://truyenvnhay.com/wp-content/uploads/2023/08/tinh-yeu-cua-ik-seob.jpg);
+                      "
+                    ></div>
+                    <div class="comics__info">
+                      <span class="comics__time">3 giờ trước</span>
+                    </div>
+                    <h4 class="comics__name">Tình Yêu Của Ik Seob</h4>
+                    <p class="comics__chapter">Chương 17.2</p>
+                  </a>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="col l-12 m-12 c-12">
+            <a href="#" class="comics__read__continue">
+              <span>Đọc tiếp 999+ truyện tranh mới</span>
+              <i
+                class="comics__read__continue__icon fa-solid fa-angle-right"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12">
+              <p class="slogan">
+                TruyenVN - Thế giới truyện tranh online với nhiều thể loại
+                truyện hấp dẫn như Đam Mỹ, truyện ngôn tình, hay truyện tranh
+                18+ luôn được cập nhật chapter mới nhanh và hình ảnh chất lượng
+                cao. Đọc đâu cũng vậy, chi bằng đọc truyện tại TruyenVN để ủng
+                hộ tụi mình nhé.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col l-12 m-12 c-12">
+            <div class="banner__2">
+              <a class="banner__2__link" href="#">
+                <img
+                  src="./assets/img/banner-2.webp"
+                  alt="Banner"
+                  class="banner__2__img"
+                />
+                <p class="banner__2__title">
+                  Cô gái 24 tuổi ở Sài Gòn hóa tỉ phú nhờ giấu kĩ vật này dưới
+                  gối!
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <img
+                src="./assets/img/comics-logo.webp"
+                alt="Logo TruyenVN"
+                class="footer__logo"
+              />
+            </div>
+            <div class="col l-12">
+              <p class="footer__introduce">
+                TruyenVN - Cộng đồng yêu thích đọc truyện tranh hay nhất. Cập
+                nhật các thể loại truyện tranh manhwa, manhua mới nhất.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+:root {
+    --white-color: #fff;
+    --primary-color: #fec038;
+    --black-color: #000;
+    --aqua-color: #57cbf2;
+    --purple-color: #bd12e0;
+    --green-color: #8bc24b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.pr-36 {
+    padding-right: 36px;
+}
+
+.mt__-4 {
+  margin-top: -4px;
+}
+
+.mt__12 {
+  margin-top: 12px;
+}
+
+.mt__60 {
+  margin-top: 60px;
+}
+
+/* Reponsive */
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.grid__column__2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: calc(100%/6);
+}
+
+.grid__column__3 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: calc(100%/4);
+}
+
+.grid__column__6 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: calc(100%/2);
+}
+
+/* Background color chapter */
+.bc__aqua {
+  background-color: var(--aqua-color);
+}
+
+.bc__purple {
+  background-color: var(--purple-color);
+}
+
+.bc__green {
+  background-color: var(--green-color);
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    visibility: visible;
+  } 
+  50% {
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
